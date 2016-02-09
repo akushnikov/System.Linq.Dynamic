@@ -82,6 +82,7 @@
     <Compile Include="InternalTests.cs" />
     <Compile Include="ExpressionTests.cs" />
     <Compile Include="OperatorTests.cs" />
+    <Compile Include="ParseLambdaTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\System.Linq.Dynamic\Properties\key.snk">

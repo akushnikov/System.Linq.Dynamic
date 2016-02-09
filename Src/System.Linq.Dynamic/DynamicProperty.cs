@@ -1,29 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace System.Linq.Dynamic
 {
-    internal class DynamicProperty
+    /// <summary>
+    /// 
+    /// </summary>
+    public class DynamicProperty
     {
-        string name;
-        Type type;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="type"></param>
         public DynamicProperty(string name, Type type)
         {
-            this.name = name;
-            this.type = type;
+            Name = name;
+            Type = type;
         }
 
-        public string Name
-        {
-            get { return name; }
-        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Name { get; private set; }
 
-        public Type Type
-        {
-            get { return type; }
-        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public Type Type { get; private set; }
     }
 }
